@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Radio+Canada:wght@300&family=Roboto:wght@300;400;500&display=swap");
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-family: "Radio Canada", sans-serif;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+.login-page {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+.login-page::before {
+    content: "";
+    background: linear-gradient(to right, #aab0f1, #a85fef);
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    /* z-index: -1; */
+  }
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid salmon; */
+    margin: 6rem 1.5rem 4rem 1.5rem;
+    background-color: white;
+    width: 100%;
+    /* height: fit-content; */
+    border-radius: 2px;
+    box-shadow: 0 -4px 14px 0 rgb(0 0 0 / 50%);
+    padding: 2rem 0;
+    padding: auto;
+}
+
+.login-form {
+    min-width: 270px;
+    height: fit-content;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 2rem;
+    /* margin: 1rem auto; */
+    margin-right: auto;
+    z-index: 1;
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+}
+
+.login-img {
+    width: 60%;
+    /* border: 2px solid salmon; */
+    height: 100%;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.login-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.login-form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    height: 100%;
+}
+
+#login {
+    color: white;
+    background-color: #883cff;
+    border: 0;
+    font-weight: 500;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin: 1.5rem 0;
+    cursor: pointer;
+    box-shadow: none;
+    transition: all 150ms ease-in-out;
+}
+#login:hover {
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+}
+
+#email,
+#password {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 12px;
+    width: calc(100% - 24px);
+    margin-bottom: 16px;
+}
+
+.login-form-box > h2 {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.sign-up-link {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    margin-bottom: 30px;
+}
+
+#email-address-head {
+    font-weight: 500;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.pass-forget-pass {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.pass-forget-pass > span {
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.pass-forget-pass > a {
+    font-size: 13px;
+}
+
+.check-box {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#cb1 {
+    margin-right: 5px;
+    cursor: pointer;
+}
+.check-box > label {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.signup-buttons {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.signup-buttons > div > img {
+    height: 20px;
+}
+.google-btn {
+    border-radius: 6px;
+    border: 2px solid red;
+    padding: .5rem .3rem;
+    display: flex;
+    width: 45%;
+    margin-right: .5rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.google-btn:hover {
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+}
+.google-btn span {
+    font-size: 14px;
+    padding: 0 8px;
+    color: red;
+}
+
+.facebook-btn {
+    border-radius: 6px;
+    border: 2px solid #4267B2;
+    padding: .5rem .3rem;
+    display: flex;
+    width: 45%;
+    margin-left: .5rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.facebook-btn:hover {
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+}
+.facebook-btn span {
+    font-size: 14px;
+    padding: 0 8px;
+    color: #4267B2;
+}
+
+#hr-style::before {
+    position: absolute;
+    content: " or login with ";
+    text-align: center;
+    top: -1030%;
+    transform: translateX(calc(100% + 17px));
+    font-size: 14px;
+    background-color: #fff;
+}
+
+@media (max-width: 1200px){
+    .login-container {
+        margin: 3rem 1.5rem 2rem 1.5rem;
+        padding: 0;
+    }
+}
+
+@media (max-width: 1020px){
+    .login-img {
+        padding: 0;
+    }
+}
+
+@media (max-width: 960px){
+    .login-container {
+        width: 100vw;
+    }
+    .login-img {
+        position: absolute;
+        width: 100%;
+        padding: 0;
+        margin: 0 ;
+    }
+    .login-form {
+        margin: auto;
+        padding: 2rem auto;
+        background: rgba(255 255 255 / 88%);
+    }
+}
+
+@media (max-width: 390px){
+    .login-form {
+        padding: 2rem 1rem;
+        min-width: 210px;
+    }
+    .login-img > img {
+        border-radius: 1rem;
+    }
+    .login-container {
+        border-radius: 1rem;
+    }
+}
+/* .login-img {
+    position: absolute;
+    width: 100vw;
+    padding: 0;
+    margin: 0 ;
+} */
